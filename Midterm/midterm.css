@@ -1,0 +1,50 @@
+html {
+    background: url(img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*If you want it to work in IE*/
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+header ul {
+    /* remove the default bullet point */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    overflow: hidden;
+    width: 50vh;
+}
+
+header ul li {
+    float: left;
+    /*4 items, so width of each is 25 percent*/
+    width: 25%;
+    font-size: 20px;
+}
+
+header li a {
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color:white;
+    /*color: #333;*/
+}
+
+header li a:hover {
+    color: #333;
+}
+
+header img {
+
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+header {
+	padding-top: 77px;
+}
