@@ -1,5 +1,5 @@
 html {
-    background: url(img/bg.jpg) no-repeat center center fixed;
+	background: url(img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,15 +14,15 @@ body {
 }
 
 header ul {
+	display: inline-block;
     /* remove the default bullet point */
     list-style-type: none;
     margin: 0;
     padding: 0;
     float: right;
-    padding-right: 20vh;
-    text-align: bottom;
+    margin-right: 5vw; 
     overflow: hidden;
-    width: 50vh;
+    width: 25vw;
 }
 
 header ul li {
@@ -30,15 +30,17 @@ header ul li {
     float: left;
     /*4 items, so width of each is 25 percent*/
     width: 25%;
+    margin-left: 20px;
     font-size: 20px;
 }
 
 header li a {
     display: block;
     text-align: center;
-    padding: 10px 10px;
     text-decoration: none;
+    padding: 20px 0px;
     color: white;
+    
     /*color: #333;*/
 }
 
@@ -48,18 +50,18 @@ header li a:hover {
 
 header img {
 	float:left;
-    padding-left: 20vh;
-    max-width: 20vh;
-    height: auto;
-    width: auto\9;
+    margin-left: 5vw;
+    max-width: 10vw;
     vertical-align: text-bottom;
     /* ie8 */
 }
 
 header {
-	background-color: white;
+	padding: 77px 0px;
     margin: 0;
-    padding-top: 77px;
+    
 }
 
-.navbar {}
+.header-background {
+	background-color: black;
+}
