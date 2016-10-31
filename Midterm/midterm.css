@@ -32,17 +32,16 @@ ul.topnav {
 
 ul.topnav li {
     float: left;
-    
 }
 
 ul.topnav li a {
     display: inline-block;
     color: white;
     text-align: center;
-    font-family: 'Catamaran', sans-serif; 
+    font-family: 'Catamaran', sans-serif;
     transition: 0.4s;
     text-decoration: none;
-    padding:0px 25px;
+    padding: 0px 25px;
     font-size: 25px;
     line-height: 80px;
 }
@@ -66,6 +65,7 @@ header {
     padding: 1vh 0px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000000;
 }
 
 ul.topnav li.icon {
@@ -109,7 +109,7 @@ i {
 #icons:before {
     content: '';
     height: 100%;
-    margin-right: -13.15em;
+    margin-right: -16.5em;
 }
 
 
@@ -162,6 +162,22 @@ body of homepage stuff
     padding: 10px;
 }
 
+/*
+////////////////////////////
+about page stuff
+///////////////////////////
+*/
+
+.about_block{
+    max-width: 100%;
+    padding:10px 25vw;
+    position: relative;
+    top:25vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    color:white;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
+}
 
 /*
 ////////////////////////////
@@ -214,7 +230,9 @@ mobile stuff
 */
 
 @media only screen and (max-width: 767px) {
-    
+    header a img {
+        display: block;
+    }
     ul.topnav li:not(:last-child) {
         display: none;
     }
@@ -238,10 +256,24 @@ mobile stuff
         display: block;
         text-align: center;
     }
+
     #release_title {
         top: 35vh;
     }
     #available {
         top: 45vh;
     }
+    .music_wrapper {
+        top: 25vh;
+    }
+    .tile {
+        display: block;
+        width: 80%;
+        max-width: 400px;
+        padding: 0px 10% 30px;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+    
 }
